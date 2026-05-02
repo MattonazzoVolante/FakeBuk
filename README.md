@@ -1,6 +1,6 @@
 # FakeBuk - A made from scratch social network
 
-![EXAMPLE front page](projectation\index.png) 
+![EXAMPLE front page](projectation/index.png) 
 
 ## What it is?
 
