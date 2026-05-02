@@ -1,0 +1,23 @@
+ALPHA 0.0.1:
+    - Essenzialmente tutta la todo list prima dell'host 
+
+ALPHA 0.1.0
+    - RILASCIO SU ALTERVISTA + TEST 
+
+ALPHA 0.2.0 
+    - Dark mode 
+    - Delay dei post
+    - Bug fix del "delete post" nei profili altrui
+    - Aggiunta della sezione annunci
+    - Traduzione in Italiano della privacy policy
+    - Aggiunta del regolamento
+    - Bug fixato il carattere ' che compare come /'
+    - Aggiornata in parte la gui
+    - Si possono fare ora appeal ai ban
+    - Inserita la dark mode (da sistemare)
+    - Ogni pagina del sito ora ha un titolo e un'icona 
+    - Aggiunte le notifiche 
+    - Aggiunto un delay di 7 minuti per poter pubblicare nuovi post 
+    - Ridotto il limite delle immagini da 50mb a 5mb 
+    - Aumentata la sicurezza e ottimizzata in parte la velocità delle query (più avanti proverò ad integrare la compressione delle immagini)
+    

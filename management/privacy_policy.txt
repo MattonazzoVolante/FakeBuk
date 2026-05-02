@@ -1,0 +1,30 @@
+Hi there! 
+This is a website created only for make me understand better how social media works
+and how databases manages data so well.
+This is a project that I started mainly for exercising without any framework or library, 
+but I put all my efforts to create something "usable" using only raw html,css,js and php.
+You can Post, Comment, Leave likes, Customize your profile and leave a feedback for this webiste.
+
+Privacy Policy:
+
+Now... Your data will NOT be sold or either used for third party cookies but it will be stored on my database, only for the period needed, like... If you delete a post it will immediatly deleted from the database.
+I did some checks on the website and it is immune to all XSS attacks and SQL injection but I higly suggest you to not insert sensible data on your anagraph data.
+You can delete your account or posts in any time, and doing so you will delete all your data on the website, for security reasons hovewer... 
+all your post will be conserved in a private part of the database for 15 days and they will be identified by your IP address,
+this is a check I need to do for make sure this website is not used for illegal activity, after 15 days your posts will be deleted permantly.
+
+
+Just use it like is intented to, ok? 
+well you read all that?
+Very well... If you are interested in the project you can join the discord server below:
+
+IF YOU HAD ANY PROBLEM REGARDING YOUR SECURITY, EMAIL ME IMMEDIATLY: 
+
+
+versione corretta:
+
+Your data will not be sold or used for third-party cookies. However, it will be stored in my database for as long as necessary. If you delete a post, it will be immediately removed from the database.
+Security is a priority—I have taken precautions to ensure the website is immune to XSS attacks and SQL injection. However, I highly recommend avoiding the use of sensitive personal information in your profile details.
+You have full control over your data. You may delete your account or posts at any time, which will remove all associated data. For security reasons, deleted posts will be privately stored for 15 days and linked to your IP address. This measure helps prevent illegal activity. After 15 days, the posts will be permanently erased.
+Please use the website as intended.
+If you have any concerns about your security, please email me immediately

@@ -1,0 +1,60 @@
+Gerarchia ruoli:
+
+- Fondatore Server  NAME COLOR: YELLOW
+
+^
+|
+|
+
+- Capo Admin   ROLE CODE: 4  NAME COLOR: dark red
+
+^
+|
+|
+
+- Admin ROLE CODE: 3  NAME COLOR: light red
+
+^
+|
+|
+
+- Capo Moderatori ROLE CODE: 2 | NAME COLOR: dark blue
+
+^
+|
+|
+
+- Moderatore ROLE CODE: 1  | NAME COLOR: light blue
+
+^
+|
+|
+
+- Utente ROLE CODE: 0
+
+Fondatore -> Colui che ha fondato e creato il sito 
+
+Capo Admin -> Ha il compito di gestire gli amministratori.
+
+Admin -> Può fare tutto quello che può fare un capo modratore, solo che può eleggere nuovi moderatori e capi moderatori
+         Si occupa anche di riferire ai capi moderatori i problemi più urgenti riguardante
+         la moderazione 
+
+Capo Moderatore -> Può fare tutto quello che può fare un moderatore, con l'aggiunta che può sospendere o reportare ad un admin un moderatore,
+                    
+                   
+Moderatore -> Può eliminare tutti i post che vuole
+              Può leggere la lista report 
+              Può direttamente sospendere o bannare un account
+              Può eliminare commenti 
+              Inoltre può direttamente gestire la lista bannati
+
+Utente ->   Può postare
+            Può commentare
+            Può pubblicare
+            Può cancellare i PROPRI post e commenti 
+            Può cambiare la propria password
+            Pu cambiare tutte le proprie informazioni
+            Può decidere se cancellare il proprio account
+
+          

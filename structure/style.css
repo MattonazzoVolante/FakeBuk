@@ -1,0 +1,523 @@
+:root{
+    /*COLORI DEFAULT*/
+    /*NAVBAR*/
+    --nav_input-color: #e0e0e0;
+
+    --background-color-nav: #005eaa;
+    --text-color-nav: black;
+    --border-right-logo: #000000;
+
+    --background-color: #cdcdcd;
+    --background-color-post: white;
+    --color-text-post: black;
+    /* Suggested Posts*/
+    --suggestedPost-textColor: black;
+    --button-bckColor: #003d6f;
+
+    /*USER AREA*/
+    --background-UserArea-top: rgb(150, 150, 150);
+    --background-User-info: rgb(182, 182, 182);
+    --background-User-action: rgba(226, 226, 226, 0.37);;
+    --background-User-actButt: rgb(230, 230, 230);
+
+    /*SETTINGS*/
+    --settings-background-sel: WHITE;
+
+    --darkmode-but-color: rgb(175, 78, 78);
+}
+
+.dark_mode {
+    --nav_input-color: #3f3f3f;
+    --background-color-nav: #1b1b23;
+    --text-color-nav: #ededed;
+    --border-right-logo: #ffffff;
+    --button-bckColor: #002a4d;
+    --background-color: #252525;
+    --background-color-post: #393939;
+    --color-text-post: #e9e9e9;
+    --background-UserArea-top: rgb(59 59 59);
+    --background-User-info: rgb(53 53 53);
+    --background-User-action: rgb(107 107 107 / 37%);
+    --background-User-actButt: rgb(151 151 151);
+    --settings-background-sel: rgb(134, 134, 134);
+
+    --darkmode-but-color: rgb(78, 175, 78);
+}
+
+#darkModeBut{
+    background-color: var(--darkmode-but-color);
+    color: white;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button{
+    background-color: inherit;
+    border: none;
+}
+
+
+/*NAVBAR*/
+
+nav{
+    display: grid;
+    grid-template-columns: 5% 55% 20% 20%;
+    width: 100%;
+    background-color: var(--background-color-nav);
+    color: var(--text-color-nav);
+    align-items: center;
+}
+
+nav input, nav select, nav #searchButton{
+    background-color: var(--nav_input-color);
+    color: var(--text-color-nav);
+    border: none;
+}
+
+nav .logo{
+    height: 50px;
+    border-right: var(--border-right-logo) solid 3px;
+}
+
+nav form{
+    display: grid;
+    grid-template-columns: 65% 5% 2% 28%;
+    width: 100%;
+}
+
+nav form input, form select{
+    height: 4vh;
+}
+
+nav form #sText{
+    width: 100%;
+}
+
+nav form #sFilter{
+    width: 100%;
+}
+
+
+#notificationBell{
+    height:25px;
+    margin-left: 10vw;
+}
+
+nav form img{
+    height: 4vh;
+    background-color: white;
+}
+
+nav .userSec{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.userSec img{
+    width: 20%;
+    border: 2px solid var(--border-right-logo);
+}
+
+
+#immagineUtente{
+    display: block;
+    width: auto;
+    max-width: 100px;
+    height: 100%;
+    max-height: 50px;
+}
+
+
+/*BODY*/
+
+body{
+    background-color: var(--background-color);
+    
+}
+
+body .content{
+    display: grid;
+    grid-template-columns: 70% 29%;
+    text-align: center;
+}
+
+/*POST SECTION*/
+
+.posts .container {
+    width: 95%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--background-color-post);
+    color: var(--color-text-post);
+    font: arial;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: left;
+}
+
+
+.posts .contentP img, .posts .contentP video{
+    display: block;
+    width: 100%;
+}
+
+.imgPubl{
+    display: grid;
+    grid-template-columns: 10% 90% ;
+}
+
+.imgPubl img{
+    display: inline-block;
+    width: 90%;
+    border: solid black 2px;
+}
+
+.interactions{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 30%;
+}
+
+.likeSecP img,.commentSecP img{
+    margin-top: 10px;
+    height: 35px;
+}
+
+.leaveAcomment form{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 20px;
+}
+
+.leaveAcomment input{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/*RIGHT FIXED SECTION*/
+
+/*
+    announcements
+*/
+
+.announcementsContainer{
+    background-color: var(--background-color);
+    text-align: center;
+    justify-content: center;
+}
+
+.announcements div{
+    background-color: var(--background-color-post);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: left;
+    color: var(--color-text-post);
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*SUGGESTED USERS*/
+.lateralSection{
+    border-left: solid black 3px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.lateralSection .button, .UsPosts #creaPost{
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 30px;
+}
+
+#creaPost{
+    border-bottom-right-radius: 3px;
+    background-color: var(--button-bckColor);
+}
+
+.lateralSection #feedback{
+    background-color: var(--button-bckColor);
+}
+
+.suggestedUsers .singleUser{
+    border: solid black 2px;
+}
+
+.lateralSection .singleUser a {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+}
+
+.suggestedUsers img{
+    height: 30px;
+}
+
+/*SUGGESTED POSTS*/
+
+.suggestedPosts .singleSugPost{
+    background-color: var(--background-color-post);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: left;
+    color: var(--color-text-post);
+}
+
+
+/*USER AREA*/
+
+.userArea{
+    margin: 10vh;
+}
+
+.userArea .topSection{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: var(--background-UserArea-top);
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--background-User-info);
+    color: var(--text-color-nav);
+}
+
+.topSection img{
+    width: 200px;
+}
+
+.topSection .userDetailedInfo{
+    display: grid;
+    grid-template-rows: 90% 10%;
+    margin: 30px;
+    font-size: 40px;
+}
+
+.topSection .userBasicInfo img{
+    border: solid black 3px;
+}
+
+.userArea .bottomSection{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.userArea .UsPosts{
+    background-color: var(--background-color);
+}
+
+.userArea .actionToUser{
+    font-size: 20px;
+    background-color: var(--background-User-action);
+    align-items: center;
+}
+
+.userArea .actionToUser a,.userArea .actionToUser button{
+    background-color: var(--background-User-actButt);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*Lato commenti*/
+
+.userArea .recentComments{
+    border-left: solid 2px black;
+    
+}
+
+.userArea .recentComments div{
+    background-color:  white;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: var(--background-color-post);
+    color: var(--color-text-post);
+}
+
+
+
+/*Settings*/
+
+.settings{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.settings .lateralSettings{
+    background-color: var(--settings-background-sel);
+    border-right: solid 2px black;
+    height: 100vh;
+}
+
+.settings .lateralSettings button{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    border: solid black 2px;
+}
+
+/*Generale*/
+.settings .general, .settings .security, .settings .other{
+    margin: 20px;
+    text-align: center;
+}
+
+.settings .general input, .settings .other button {
+    width: 80%;
+    height: 50px;
+    margin: 20px;  
+}
+
+.settings .general #updInfo{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+}
+
+
+.settings .other button{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.settings .security form{
+    background-color: var(--background-color-post);
+    margin-top: 30px;
+}
+
+.settings .security, .security input{
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+    height: 30px;
+    color: var(--color-text-post);
+}
+
+.settings .errori{
+    color:red;
+    font-size: 40px;
+}
+
+.centerPosDiv {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+
+
+
+/*SEZIONE MOD*/
+
+.modAreaBase{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.buttonArea div{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.buttonArea button{
+    width: 25vw;
+    height: 3vh;
+}
+
+/*SEZIONE UTENTI*/
+
+
+.modAreaUser .listArea div .gridButton{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    height: 10vh;
+    text-align: center;
+    border: solid black 2px;
+    align-items: center;
+}
+
+div button i{
+    width: 11vw;
+    border-left: solid black 2px;
+}
+
+.modAreaUser .repInfo{
+    display: block;
+    margin-left: 10vw;
+    border-left: solid 4px black;
+    height: 100vh;
+}
+
+.modAreaUser .repInfo div{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+/*SEZIONE POST*/
+
+
+
+.modAreaPost .listArea .gridButton{
+    display: grid;
+    grid-template-columns: 10% 5% 30% 20% 10% 5% 10%;
+    height: 10vh;
+    text-align: center;
+    border: solid black 2px;
+    align-items: center;
+}
+
+/*Sezione search*/
+
+.singleUser{
+    background-color: var(--background-User-info);
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+
+
+/* ADMIN AREA */
+
+.AdminAreaBase{
+
+}
+
+.modAreaPost{}
+
+/* Announcement Area */
+
+.createAnnContainer{
+    text-align: center;
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+.createAnnContainer form{
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    width: 50vw;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}

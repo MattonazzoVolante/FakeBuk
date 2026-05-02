@@ -1,0 +1,341 @@
+[X] progettare il database
+[X] progettare il sistema di login e di registrazione
+[X] progettare il sistema dei post
+[X] sviluppare il sistema per i commenti
+[X] sviluppare il sistema per lasciare i like
+sviluppare una verifica email --SCARTATO
+[X] sviluppare l'area utente
+    - [X] Profilo
+    - [X] Impostazioni
+    - [X] Possibilità di cancellare l'account
+[X] integrare l'upload dei files
+[X] progettare una piccola gui
+[X] Creare un sistema per post privati e pubblici
+[X] Creare la possibilità di rimuovere un proprio post
+[X] Integrare il sistema follower
+[X] Creare il sistema di ricerca
+[X] Sistema di moderazione
+    [X] Sistema di ruoli
+    [X] Verifica del moderatore e GUI index
+    [X] Sistema di report
+        [X] Sistema di report dei post
+        [X] Sistema di report dei utenti 
+    [X] GUI del moderatore
+        [X] sistema di visualizazzione report utenti
+        [X] sistema di visualizazzione motivi utenti 
+        [X] sistema di visualizazzione report post
+        [X] sistema di visualizazzione motivi post
+        [X] sistema di ban
+        [X] sistema di visualizzazione ban
+        [X] Sistema di rimozione
+            Il sistema di rimozione semplicemente rimuove i post reportati
+            e manda una notifica a chi lo ha pubblicato
+            - Già integrato visto che i post reportati hanno tutti link che portano al post originale, e quindi da lì, si può eliminare
+        [X] sistema di ricerca
+            Cerca sia un utente, che un post, che un contenuto di post
+            - Creato un sistema di ricerca dedicato ai moderatori
+        [X] Sistema di unban
+    [X] Gui dell'admin
+        [X] importare la gui del moderatore
+        [X] aggiungere la gestione mod 
+    
+- FIXX URGENTE [X] FIXARE LA VERIFICA UTENTE E MODERATORE nel deletePost();
+ [X] Controllare se la verifica avviene anche per cancellare gli account
+ [X] Sistema di recupero password
+    [X] Sistema a domande
+    [X] Inserimento delle domande + risposta
+[X] Ultimare la sezione per logout/delete account
+    [X] Sistemare la grafica
+    [X] Fare che chiede la password prima di cancellare l'account
+    [X] Mettere un are you sure?
+
+[X] Sistema di ban
+[X] Sistema di eliminazione dei commenti
+[X] Sistema di notifiche
+    [X] Visualizzazione notifiche
+    [X] Trigger delete comment
+    [X] Trigger delete post
+    [X] Trigger Like
+    [X] Trigger commenti
+    [X] Creazione tabella
+[X] Sistema di feedback
+    [X] Visualizzazione feedback - Admin section
+    [X] Sezione per lasciare feedback
+    [X] Creazione tabella
+[X] Fare in modo che quando si cancella un post il file allegato venga cancellato anche dalla cartella
+[X] Fare in modo che non venghino usati cookie per conservare il token dell'utente
+
+22/05/2025
+[-] Commentare e sistemare il codice -- IMPORTANTE
+[X] Fixare il codice per il recupero password
+[X] Creare grafici capibili database (quello di phpmyadmin va più che bene)
+[X] Creare grafici dei ruoli
+
+
+
+23/05/2025
+AVVISI:
+
+[X] Privacy Policy
+
+Gui:
+
+[-] GUI sezione per postare 
+    [X] mettere un anteprima dell'immagine
+
+
+[-] GUI sezione login
+[-] GUI sezione register
+
+24/05/2025
+
+[-] GUI risultati di ricerca
+[-] GUI moderazione <- da sistemare solo
+
+26/05/2025:
+
+[X] Ulteriolmente sistemata la GUI
+[X] Aggiunta la preview dei media caricati per postare
+[X] Fare la funzione di fetch automatico quando si scrolla
+[X] Sistemare il bug del fetch
+[X] sistemare l'area notifiche
+[X] resettare il sito web
+
+
+27/05/2025
+
+[X] Mettere la privacy Policy nella sezione register
+[X] Ultimare la gui desktop 1
+    [X] Ultimare impostazioni
+    [X] Ultimare index 
+    [X] Ultimare la user area 
+    [X] Ultimare il notification Center  
+    [X] Ultimare il signup
+    [X] Sez commenti
+    
+
+[X]attacchi xss
+    [X] attacchi xss nelle impostazioni utente
+[X] Fare immagini per il capolavoro
+
+
+
+29/05/2025:
+
+SICUREZZA:
+
+[Dovrebbe già funzionare] Introdurre la input sanitization, sia per gli input sql 
+[X] Ultimare la gui desktop 2:
+    [X] Ultimare feedback
+    [X] Ultimare post 
+    [X] Ultimare search
+    [X] Ultimare header
+
+[-] Ultimare il recover password
+[X] Assicurarsi che ogni username sia univoco.
+
+
+FARE PER DOMANI PER PRESENTARLO A GIUFFRIDA:
+
+[X] fixare il database (user)
+Controllare che tutto funzioni:
+    [X] post
+    [X] Commenti 
+    [X] Like 
+    [X] feedback 
+    [X] rimozione post/commento
+    [X] log out
+    [X] modifica dei dati 
+    [X] inserimento della domanda di sicurezza
+[X] Sistemare l'integrità referenziale dei 
+[X] Fare grafico database ordinato (Logico)
+[X] Fare schema E/R senza attributi 
+[X] Sistemare quella cosa dei warning
+[X] mettere un pulsante per ritornare nell'index nell'area moderatore, e uno per andare in area amministratore
+[X] Mettere un ricaricamento di pagina quando si cancella un post/commento
+[X] Ultimi test
+    [X] Ri-messi i trigger cancellati
+    [X] Fixare la search gui quando si cerca per tag
+[X] esportare il database
+[X] Caricare tutto sulla chiavetta
+
+
+Fare in estate:
+
+
+[X] creare un htaccess
+[X] Fare in modo che si possa levare like dai post 
+[X] Fare in modo che si possa unfolloware un utente 
+
+[-] Fare in modo che la pagina non cambi completamente quando si lascia un like
+[X] Fare gli ultimi controlli di sicurezza 
+    [-] XSS 
+    [-] Stored XSS
+    [-] cross scripting -> Da verificare con calma
+    [X] sql injection ovunque
+    [-] Mettere try e catch dentro le query
+[X] Aggiungere disclaimer che è un sito in alpha solo per scopo educativo
+[X] controllare se gli account vengono cancellati
+
+
+[X] Fare bug fixing
+[X] Fare documento da dare a Giuffrida
+    [X] Introduzione
+    [X] Funzionamento
+    [X] Sicurezza
+    [X] Realizzazione
+[X] HOSTARE
+
+
+POST HOST:
+
+[X] Aggiungere la possibilità di fare appeal ai ban
+    [X] Sezione
+    [X] Funzionalità 
+    [X] Stile
+    [X] Mettere delay
+[-] Inserire dark mode <- sistemare
+[X] Mettere le icone e i titoli nell'head di ogni pagina
+[X] Bug fix
+[X] Sistemare la gui delle cose appena aggiunte
+[ ] Sistemare la gui in generale
+[X] Sezione annunci
+    [X] Creazione pagina
+    [X] Collegamento nella main page 
+    [X] Creazione db 
+    [X] Interazione con il db
+    [X] Prova aggiunta 
+    [X] Aggiunta nella sez amministratore per lasciare annunci 
+    [X] Finire lo stile
+        [X] Stile area amm 
+        [X] Stile area annunci 
+        [X] Stile singolo annuncio
+[X] Fare in modo che i post non siano troppo lunghi
+[X] Assicurarsi che il ban per IP banni tutti gli IP della sessione dell'utente
+[X] Sistemare meglio la traduzione della privacy policy 
+[X] Mettere uno stile al regolamento (circa)
+[X] Realizzare un filtro brutte parole
+    [X] Implementarlo nelle sezioni:
+        [X] Post 
+        [X] Tag
+        [X] Commenti 
+        [X] Descrizione profilo 
+        [X] Username
+[X] Notifiche sistemata
+[X] Implementare un piccolo pallino rosso quando c'è una notifica non letta
+[X] Ultimare la dark mode
+    [X] Sistemare la grafica
+    [X] Spostare il pulsante nelle impostazioni
+    [X] Implementare i colori dei pulsanti che cambiano
+    [X] Controllare eventuali bug
+[X] Completare il recupera password
+    [X] Grafica 
+    [X] Ultimi test 
+[X] Fare in modo che solo un utente loggato possa reportare
+[X] Mettere un modo per chiudere la sez di report
+    [ ] Magari sistemare la grafica al riguardo
+
+[X] Fare in modo che si possa levare la dark mode anche da non loggato
+[X] Sistemare e ultimare Settings.php
+
+[X] Sistemare la schermata bianca dovo un report
+
+[X] Controllare le sessioni se buttano fuori se la sessione non è più valida
+    ^ Il controllo avviene senza però cancellare la vecchia sessione
+[S] Ottimizzare le query <- Si può sorvolare
+    [-] Post 
+    [-] Ver account
+
+[X] Fare attacchi con XSS strike e sqlmap
+
+[X] Fare in modo che i moderatori possano vedere gli appeal
+
+[X] Levare la monnezza dai file
+
+[X] Ultimi test
+
+[X] RILASCIO + HOST DELL'ALPHA 0.2.0  (possibilmente prima del 22)
+
+[X] Sistemare il sito e PROVARE I BAN per ip, poi mandare il link
+
+[ ] Mettere try and catch nelle query 
+[X] Fare Test attacchi
+
+[ ] Sistemare lo stile della schermata di ban e di report
+
+[ ] Rifinire lo stile per l'area moderatore
+
+[ ] Attacco del sito altervista con xsstrike e sql map 
+[ ] Finire entro il 24
+
+[ ] Fare la versione mobile -> Opzionale 
+[ ] Ultimare la gui mobile -> opzionale
+
+
+
+
+
+LISTA BUG:
+
+Da fixare:
+ [X] Quando viene caricato un video più grande del limite,
+    verrà comunque tentato l'inserimento, questo crea post "fantasma" 
+    senza contenuto
+
+ [X] Fixare il quando si reporta, dove l'utente rimane in una blank screen
+ dentro functions.php 
+
+  [X] Sistemare la durata del ban
+
+    [X] Mettere che il titolo nei post è obbligatorio
+
+  [X] Fixare il ritorno a capo durante la creazione post
+
+ * Opzionale, solo se da problami [ ] Fare in modo che ci sia un delay per ogni fetch in generale
+
+  [Z] Non viene segnalato la messa del like nei post post-fetch <- si sistema una volta hostato
+
+BUG FIX After host:
+
+    [X] Mettere le notifiche lato php
+        [X] Commenti 
+        [X] Post
+        [X] Like
+        [X] Followers
+
+    [X] Mettere un delay ogni volta che bisogna pubblicare 
+
+    [X] Abbassare il limite di grandezza dei file 
+
+    [X] Mettere ban per ip 
+
+    [X] Mettere il limite di post caricati nell'userArea
+
+    [X] Fixare che ' compare come /'
+
+    [X] Mettere un limite di caratteri per l'username (tipo 12)
+
+
+    [X] Migliorare lo stile del login 
+
+    [X] Mettere un regolamento
+
+    [X] Rimuovere DELETE POST dalle pagine utenti non dell'utente
+
+    [X] Fare in modo che durante un ban anche le sessioni dell'utente venghino cancellate
+
+    [V] Dopo un pò di tempo il sito carica ma completamente grigio, probabilmente uno script nell'header
+         ^ Probabilmente a causa della vecchia versione di php che usava altervista
+    [X] Fare in modo che i like non vadino in negativo
+
+    [X] Tradurre in italiano la privacy policy
+
+    [X] Mettere la compressione dei file prima dell'upload <- altervista merda
+
+    [X] Sistemare lo script di logout quando si è bannati
+
+    [D] Fixare il titolo che esce fuori dalla div <- dipende se è una parola intera
+
+    [D] Fixare i contenuti dei commenti nelle sezioni utenti <- Parzialmente fixato, il problema si crea quando gli utenti mettono una parola singola troppo lunga
+
+    [X] Fixare l'username che si sovrappone sopra i tasti nella user area <- fixato rendendo gli username massimo di 12 caratteri

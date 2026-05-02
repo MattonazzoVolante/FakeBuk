@@ -1,0 +1,86 @@
+Questo sito è stato creato in poco tempo, e siccome ho dovuto
+presentarlo agli esami di stato per evitare ogni sorta di problema
+con xampp o il computer della scuola in generale ho deciso di hostarlo
+su Altervista...
+
+Perché ho iniziato così questo file? 
+Perché Altervista è davvero limitato in modi che non hanno senso
+per esempio non hanno il servizio SMTP per le mail che mi ha costretto
+a usare il sistema di Domande di sicurezza per il recupero password e 
+altre minchiate varie come il non supportare i Trigger SQL nel database.
+
+... Adesso... Come ha influenzato il sito? 
+Lo ha influenzato in modo brutale perché ho dovuto cambiare intere funzioni
+solo per farlo funzionare su quel server.
+
+QUINDI se mi dite "E si poteva fare in questo modo" vi dico subito che lo so già
+che ci sono modi migliori di fare certe cose.
+
+Detto questo... come è stato creato il sito?
+Per 4 mesi ogni pomeriggio dedicavo all'incirca 2 orette
+Seguendo la todo list che trovare a ./todo.todo.
+
+La todo list sembra un qualcosa di inecessario ma fidatevi che è ESSENZIALE 
+per ogni progetto, ESSENZIALE vi permette di capire cosa fare e i sottopassaggi
+inoltre più andate avanti più vi possono venire idee da aggiungere, voi segnatele
+in quella lista e in caso le scartate dopo... quindi ritornando alla domanda,
+2 ore al giorno che dedicavo a seguire 1 o 2 obiettivi che avevo messo nella todo.todo.
+
+Prima di tutto ho fatto una progettazione, in questa cartella trovate un pò di cose...
+Ma la prima cosa che ho fatto è stato aprire GIMP è creare un concept per una interfaccia,
+Poi ho impostato gli elementi e pian piano creato uno schema E/R del database,
+Dopo uno schema logico e infine ho implementato il tutto in SQL.
+Certe cose come i ban e le notifiche son stati aggiunti dopo però con una buona progettazione
+è stato facile implementarli.
+
+Una volta fatta la progettazione ho cominciato a creare tutto il backend.
+Siccome stavo ancora cercando di imparare il php ho fatto il tutto in modo
+estremamente grezzo (lo si può notare in scripts/post_functions.php),
+giusto per rendere il tutto meno sanguinoso da guardare per gli occhi
+ho creato della funzioni da chiamare poi nelle pagine principali (che 
+tutto sommato sono venuti abbastanza puliti).
+
+OGNI progetto richiede un minimo di impegno, per far caricare un post con
+una grafica decente ho impiegato 1 ora, poi per tutto il resto giorni per 
+creare una interfaccia un minimo funzionale.
+
+Dopo un mese infatti avevo creato un sistema per postare, vedere post,
+lasciare commenti, profili,lasciare like seguire eccetera ancora tutto molto grezzo.
+
+Dopo 2 mesi una grafica un minimo decente, impostazioni bug fixing barra di ricerca.
+
+Dopo 3 mesi il sito era quasi completo con tutto e anche un sistema di moderazione...
+e poi il disastro... l'ho hostato, dato l'ip ad alcuni miei amici eehm...
+diciamo che dopo 3 giorni mi sono ritrovato la cartella Uploads piena 
+di hentai e porno di vario genere con qualche meme black humor.
+
+Dopo 1 settimana ho resettato il sito aggiornandolo impostando un limite di post
+(2 post ogni 7 minuti) e anche un limite di grandezza (Dimenticanza grave visto che prima
+potevano caricare un intero film nel server), anche un regolamento.
+
+Ho rimesso il sito online a distanza di 2 settimane dal mio esame orale e finalmente
+ed era presentabile (trascurando l'indomabile spirito umano che ha creato
+uno script python che aveva l'unico compito di caricare lo stesso hentai 2 volte
+ogni 7 minuti caricando 500mb di roba in meno di 1 giorno nonostante il blocco
+ma dettagli mannaggia a te Simone).
+
+L'esane va bene, i professori hanno notato la funzionalità del sito e anche la sicurezza.
+
+Nei commenti che trovate nei file potete leggere e vedere nel dettaglio come è stata realizzata.
+
+Detto questo voglio aggiungere 2 cose...
+NON fate quello che ho fatto io, ovvero a non usare nessun framework,
+ho dovuto reinventare la ruota più volte e anche in modo probabilmente inottimizzato
+per far funzionare certe cose. Vi prego, per la vostra incolumità mentale
+usate React e un backend decente con Laravel, non pensate neanche per un secondo
+di dire "Ok, lo ha fatto sto qua lo posso fare pure i-" NO, usate roba moderna.
+
+2° cosa, se volete fare qualcosa fatela, io un giorno ho letteralmente detto
+un pomeriggio "Ma si, ricreiamo facebook senza nessun framework con le cose
+che ho imparato da scuola e l'ho fatto più come sfida personale.
+Quindi, per finire in bellezza, la morale è, fate quello che volete, e se non vi piace
+l'autolesionismo usate un framework.
+
+
+
+

@@ -1,0 +1,345 @@
+
+:root {
+    --general-background: linear-gradient(90deg,rgba(46, 46, 46, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(24, 56, 217, 1) 100%);
+    /* Login */
+    --background-login-color: white;
+    --buttons-login-borderColor: black;
+    --text-login-color: black;
+
+    --input-background: rgb(255, 255, 255);
+    --input-text-color: rgb(0, 0, 0);
+
+    --background-post: rgb(255, 255, 255);
+    --background-text-post: rgb(0, 0, 0);
+    --background-submitButton-color: #005eaa;
+    --text-submitButton-color: rgb(212, 212, 212);
+
+    --background-submitButton-color-hover: #003968;
+    --text-submitButton-color-hover: white;
+    /*Signup*/
+    --background-signup-color: white;
+
+
+}
+
+.dark_mode {
+    --general-background: linear-gradient(90deg, rgba(46, 46, 46, 1) 0%, rgb(87, 87, 87) 50%, rgb(6, 12, 46) 100%);
+    --background-login-color: rgb(43 43 43);
+    --buttons-login-borderColor: #ededed;
+    --input-background: rgb(117, 117, 117);
+    --input-text-color: rgb(212, 212, 212);
+    --text-login-color: #ffffff;
+    --background-post: rgb(43 43 43);
+    --background-text-post: white;
+    --background-submitButton-color: #002d51;
+    --text-submitButton-color: rgb(212, 212, 212);
+    --background-submitButton-color-hover: #003968;
+    --text-submitButton-color-hover: white;
+    --background-signup-color: rgb(43, 43, 43);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+}
+
+.login , .register, .postPubl{
+    background: #2e2e2e;
+    background: var(--general-background);
+    height: 100vh;
+}
+
+/*RECOVER PASSWORD*/
+
+.recoverPassword{
+    text-align: center;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    
+}
+
+.recoverPassword h1,.recoverPassword h2, .recoverPassword p{
+    color: var(--text-login-color);
+    background-color: var(--input-background);
+}
+
+.recoverPassword input{
+    color: var(--text-login-color);
+    background-color: var(--input-background);
+    margin-top: 30px;
+    border: 5px solid black;
+}
+
+.recoverPassword input{
+    width: 100%;
+}
+
+/* SEZIONE LOGIN */
+
+.postPubl .media{
+    display: block;
+    width: 20vw;
+    height: auto;
+    border: 3px solid black;
+}
+
+::placeholder {
+  color: var(--input-text-color);
+}
+
+.mainPostSec{
+    width: 40vw;
+    height: auto;
+    
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 3vh;
+    background-color: var(--background-post);
+    color: var(--background-text-post);
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*.mainPostSec form{
+    display: grid;
+    grid-template-rows: 90% 10%;
+}*/
+
+.mainPostSec i{
+    height: 358px;
+}
+
+.mainPostSec .inp, .mainLoginSex select{
+    width: 90%;
+    height: 30px;
+    margin-top: 20px;
+    border: 1px solid var(--buttons-login-borderColor);
+    color: var(--input-text-color);
+    background-color: var(--input-background);
+}
+
+.mainPostSec #content{
+    height: 300px;
+}
+
+.mainPostSec #mainDiv{
+    display: grid;
+    height: 100%;
+    grid-row: 90% 10%;
+}
+
+.mainPostSec .formAction{
+    display: grid;
+    height: 100%;
+    grid-row: 90% 10%;
+}
+
+.mainPostSec .lowerButtons{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.mainPostSec #submit{
+    width: 90%;
+    background-color: var(--background-submitButton-color);
+    color: var(--text-submitButton-color);
+}
+
+
+/* SEZIONE LOGIN */
+
+.mainLoginSex{
+    width: 35vw;
+    height: 80vh;
+    margin-left: 32.5vw;
+    margin-right: 32.5vw;
+    background-color: var(--background-login-color);
+    color: var(--text-login-color);
+    border: 1px solid black;
+    margin-top: 3vh;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.mainLoginSex input, .mainLoginSex select{
+    width: 90%;
+    height: 30px;
+    margin-top: 20px;
+    border: 1px solid var(--buttons-login-borderColor);
+    background-color: var(--input-background);
+    color: var(--input-text-color);
+}
+
+.mainLoginSex #mainDiv{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 95% 5%;
+}
+
+.mainLoginSex .formAction{
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 95% 5%;
+}
+
+.mainLoginSex .lowerButtons{
+    display: grid;
+    height: 3vh;
+    grid-template-columns: 50% 50%;
+}
+
+#loginButton{
+    background-color: var(--background-submitButton-color);
+    color: var(--text-submitButton-color);
+    border-radius: 10px;
+}
+
+#loginButton:hover{
+    background-color: var(--background-submitButton-color-hover);
+    color: var(--text-submitButton-color-hover);
+    border-radius: 10px;
+}
+
+.mainLoginSex h1{
+    margin-top: 50px;
+}
+
+
+/* SEZIONE SIGNUP */
+
+.signUp{
+    text-align: center;
+}
+
+.signUp div{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    background-color: var(--background-signup-color);
+    border-radius: 30px;
+    color: var(--input-text-color);
+    
+}
+
+.signUp input{
+    width: 90%;
+    height: 30px;
+    margin-top: 20px;
+    background-color: var(--input-background);
+    color: var(--input-text-color);
+}
+
+/*privacy policy*/
+
+.privacy_pol{
+    background-color: rgba(255, 255, 255, 0.322);
+    font-size: 17px;
+}
+
+
+
+
+/* NOTIFICATION */
+
+.notBase{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-radius: 1px;
+    border: solid 0.5px black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.notBase i{
+    border-left: 1px solid black;
+}
+
+.notfNotRead{
+    background-color: rgb(219, 219, 219);
+}
+
+.notFRead {
+    background-color: rgb(119, 119, 119);
+}
+
+.output{
+    background-color: rgba(255, 0, 0, 0.562);
+    color: white;
+    font-size: 30px;
+}
+
+/* SEZIONE FEEDBACK */
+
+.feedbackDisclaimer{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.feedbackForm form{
+    display: grid;
+    grid-template-rows: 90% 10%;
+    width: 40vw;
+    height: 80vh;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 3vh;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.feedbackForm textarea{
+    width: 98%;
+    height: 98%;
+    border: none;
+    margin: 1%;
+}
+
+.feedbackForm textarea:focus{
+    outline: none;
+}
+
+.feedbackForm #submit{
+    width: 100%;
+    background-color: var(--color-submitButton-color);
+    color: white;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-right: 5vw;
+}
+
+
+/* Ban appeal */
+
+.banAppeal{
+    text-align: center;
+}
+
+.banAppeal form{
+    display: grid;
+    grid-template-rows: 90% 10%;
+    width: 40vw;
+    height: auto;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 3vh;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.banAppeal textarea{
+    width: 98%;
+    height: 50vh;
+    border: 1px solid black;
+    margin: 1%;
+}
