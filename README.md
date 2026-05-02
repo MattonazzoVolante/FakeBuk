@@ -162,7 +162,7 @@ You can find some documentation on projectation folder and in the comments of th
 
 ## License
 
-This project is licensed under the [to decide]
+This project is licensed under the MIT License
 
 ## Contact
 
