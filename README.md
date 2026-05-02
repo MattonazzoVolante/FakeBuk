@@ -119,11 +119,11 @@ I'm glad if this little project helped you in some way
 
 E/R scheme of the Database
 
-![ER scheme of the database](projectation\schemaER_semplificato.png) 
+![ER scheme of the database](projectation/schemaER_semplificato.png) 
 
 Logic scheme of the Database
 
-![Logic scheme of the database](projectation\schema_logico.png) 
+![Logic scheme of the database](projectation/schema_logico.png) 
 
 RAPID Q&A:
 
